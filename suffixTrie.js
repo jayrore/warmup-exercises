@@ -24,12 +24,14 @@ class SuffixTrie {
   }
 
   contains(string) {
-    let str = string.split('')
-    let search = str.reduce(( current, char ) =>
-      (current && current[char]) ? current[char] : false
-      , this.root)
-
-    return (search) ? true : false
+    let node = this.root
+    for (const letter of string) {
+      if (!(letter in node)) {
+        return false
+      }
+      node = node[letter]
+    }
+    return this.endSymbol in node
   }
 }
 
