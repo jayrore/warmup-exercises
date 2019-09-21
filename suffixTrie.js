@@ -6,14 +6,21 @@ class SuffixTrie {
   }
 
   populateSuffixTrieFrom(string) {
-    this.root = { [string[string.length - 1 ]]: { '*': true } }
-    for ( let i = string.length - 2; i >= 0; i-- ) {
-      if (!this.root[string[i]]) {
-        this.root[string[i]] = {}
-      }
-      let tree = Object.assign({}, this.root[string[i + 1]])
-      this.root[string[i]][string[i + 1]] = tree
+    for ( let i = 0; i < string.length; i++ ) {
+      this.insertSubstringAt(i, string)
     }
+  }
+
+  insertSubstringAt(i, string) {
+    let node = this.root
+    for ( let j = i; j < string.length; j++ ) {
+      const letter = string[j]
+      if (!(letter in node)) {
+        node[letter] = {}
+      }
+      node = node[letter]
+    }
+    node[this.endSymbol] = true
   }
 
   contains(string) {

@@ -48,7 +48,7 @@ test('Test #6', () => {
   expect(test4.contains('cd')).toBe(false)
 })
 
-test.only('Test #7', () => {
+test('Test #7', () => {
   expect(test7.root).toStrictEqual({
     "e": {"*": true},
     "l": {"e": {"*": true}},
