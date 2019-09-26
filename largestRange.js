@@ -13,7 +13,6 @@ function largestRange(array) {
 
   for (let i = 0; i < array.length; i++) {
     const number = array[i]
-    // const newRange = [ number ]
     let left  = number - 1
     let right = number + 1
     let currentLength = 1
@@ -23,23 +22,16 @@ function largestRange(array) {
     }
 
     numbersMap[number] === true
-    // newRange.unshift(number)
-    // newRange.push(number)
 
     // << search to back
-    // let firstNumber = number - 1
-    // while ( firstNumber in numbersMap ) {
     while ( left in numbersMap ) {
-      // newRange.unshift(firstNumber)
       numbersMap[left] = true
       left--
       currentLength++
     }
 
     // >> search to front
-    // let lastNumber  = number + 1
     while ( right in numbersMap ) {
-      // newRange.push(lastNumber)
       numbersMap[right] = true
       right++
       currentLength++
