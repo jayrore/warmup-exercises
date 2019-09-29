@@ -19,3 +19,20 @@ function updateJumps(array, jumps, i) {
 }
 
 exports.minNumberOfJumps = minNumberOfJumps
+
+function minNumberOfJumpsV2(array) {
+  let maxReach = array[0]
+  let steps = array[0]
+  let jumps = 0
+  for (let i = 0; i < array.length - 1; i++) {
+    maxReach = Math.max(maxReach, array[i] + i )
+    steps -= 1
+    if (steps === 0) {
+      jumps += 1
+      steps = maxReach - i
+    }
+  }
+  return jumps + 1
+}
+
+exports.minNumberOfJumpsV2 = minNumberOfJumpsV2
