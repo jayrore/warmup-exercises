@@ -1,5 +1,4 @@
 
-quickSort([4,3,2])
 function quickSort(array = []) {
   quickSortHelper(array, 0, array.length - 1)
   return array
