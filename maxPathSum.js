@@ -20,7 +20,6 @@ function maxPathSumHandler(tree) {
   // calculate the running max branch sum
   let maxSumTree = Math.max(maxSumBranch, left.maxSumBranch + tree.value + right.maxSumBranch)
   let runningMaxSumBranch = Math.max(maxSumTree, left.runningMaxSumBranch, right.runningMaxSumBranch)
-  console.log({ maxSumBranch , runningMaxSumBranch, value: tree.value })
   return { maxSumBranch , runningMaxSumBranch }
 }
 
