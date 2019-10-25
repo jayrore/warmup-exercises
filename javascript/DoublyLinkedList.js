@@ -86,6 +86,7 @@ class DoublyLinkedList {
   insertAtPosition(position, nodeToInsert) {
     if (position == 1) {
       this.setHead(nodeToInsert)
+      return
     }
     let node = this.head
     let counterPosition = 1
