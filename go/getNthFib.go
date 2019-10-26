@@ -4,9 +4,9 @@ import (
  "fmt"
 )
 
-func main(){
-  fmt.Println(GetNthFib(5))
-}
+// func main(){
+//   fmt.Println(GetNthFib(5))
+// }
 
 func GetNthFib( n int ) int{
   lastTwo := []int{0,1}

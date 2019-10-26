@@ -51,10 +51,10 @@ func (tree *bstNode) Insert(value int){
   }
 }
 
-func main(){
-  bst := New(10)
-  bst.Insert(15)
-  bst.Insert(8)
-  // fmt.Print(bst.value)
-  fmt.Print(bst.FindClosestValueInBST(13))
-}
+// func main(){
+//   bst := New(10)
+//   bst.Insert(15)
+//   bst.Insert(8)
+//   // fmt.Print(bst.value)
+//   fmt.Print(bst.FindClosestValueInBST(13))
+// }

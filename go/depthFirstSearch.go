@@ -31,11 +31,11 @@ func NewNode(name string) *Node {
   }
 }
 
-func main(){
-  test := NewNode("A")
-  test.AddChild("B").AddChild("C")
-  test.Children[0].AddChild("1").AddChild("2")
-  result := test.DepthFirstSearch([]string{})
-  fmt.Println(result)
-}
+// func main(){
+//   test := NewNode("A")
+//   test.AddChild("B").AddChild("C")
+//   test.Children[0].AddChild("1").AddChild("2")
+//   result := test.DepthFirstSearch([]string{})
+//   fmt.Println(result)
+// }
 

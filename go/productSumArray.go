@@ -22,7 +22,7 @@ func ProductSumHandler(array SpecialArray, depth int) int {
   return sum * depth
 }
 
-func main(){
-	// 27
-  fmt.Print(ProductSum(SpecialArray{SpecialArray{1, 2}, 3, SpecialArray{4, 5}}))
-}
+// func main(){
+// 	// 27
+//   fmt.Print(ProductSum(SpecialArray{SpecialArray{1, 2}, 3, SpecialArray{4, 5}}))
+// }

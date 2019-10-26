@@ -4,10 +4,10 @@ import (
   "sort"
 )
 
-func main(){
-  result := twoNumbersSum([]int{1,2,4,5,3},7)
-  fmt.Println(result)
-}
+// func main(){
+//   result := twoNumbersSum([]int{1,2,4,5,3},7)
+//   fmt.Println(result)
+// }
 
 func twoNumbersSum(array []int, targetSum int) []int{
   sort.Ints(array)
