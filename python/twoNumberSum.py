@@ -1,5 +1,5 @@
 
-def twoNumbersSum(array, targetSum):
+def twoNumberSum(array, targetSum):
 	array.sort()
 	#print(array)
 	left = 0
@@ -14,4 +14,3 @@ def twoNumbersSum(array, targetSum):
 			right -= 1
 	return []
 
-print(twoNumbersSum([1,2,5,4],7))

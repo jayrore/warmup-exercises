@@ -1,15 +1,7 @@
-package main
-import (
-  "fmt"
-  "sort"
-)
+package twoNumberSum
+import "sort"
 
-// func main(){
-//   result := twoNumbersSum([]int{1,2,4,5,3},7)
-//   fmt.Println(result)
-// }
-
-func twoNumbersSum(array []int, targetSum int) []int{
+func TwoNumberSum(array []int, targetSum int) []int{
   sort.Ints(array)
   left, right := 0, len(array)-1
   for left < right {
