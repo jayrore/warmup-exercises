@@ -10,6 +10,6 @@ func TestCase1(t *testing.T) {
 	expected := []int{1,2,3,4}
 
 	if !reflect.DeepEqual(output, expected) {
-		t.Errorf("Two number sum is incorrect")
+		t.Errorf("Sort Array is incorrect")
 	}
 }
