@@ -1,3 +1,5 @@
 #!/bin/bash
+DEFAULTDIR=$(pwd)
+WORKDIR=${2:-$DEFAULTDIR}
 
-touch "$(pwd)"/javascript/"$1"{.js,.test.js}
+touch "$WORKDIR"/javascript/"$1"{.js,.test.js}
